@@ -8,6 +8,15 @@
 
 Вкратце, распределение данных по классам имеет ~логнормальное распределение. Классов, у которых всего 1-2 ббокса на весь датасет очень много. Выборки трэйн\тест делал без ликов используя стратификацию по классам, для этого пришлось немного заапсемплить эти редкие классы. Датасет размечен не самым лучшим образом, полно недоразмеченных объектов и кривых ббоксов.
 
+<a name="">Detection example</a>
+---------------
+* Batch prediction
+![all text](https://github.com/Ilnaz77/FoodDets/blob/main/git_imgs/test_batch0_pred.jpg?raw=true)
+
+* Batch Ground Truth
+![alt text](https://github.com/Ilnaz77/FoodDets/blob/main/git_imgs/test_batch0_gt.jpg?raw=true)
+
+
 <a name="">Results download</a>
 ---------------
 Если вы не хотите проходиться по всем шагам, обозначенным ниже, а просто хотите посмотреть результат, то скачайте следующие файлы из google.drive:
@@ -59,9 +68,4 @@ $ cp data_raw/ FoodDets/data_raw
 
 В результате появится папка new_data/
 
-
-
-
-![alt text](https://github.com/Ilnaz77/FoodDets/blob/main/git_imgs/test_batch0_pred.jpg?raw=true)
-![alt text](https://github.com/Ilnaz77/FoodDets/blob/main/git_imgs/test_batch0_gt.jpg?raw=true)
 
