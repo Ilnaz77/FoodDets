@@ -442,7 +442,7 @@ def ap_per_class(tp, conf, pred_cls, target_cls, pr_score=None, top_N=None):
             # Recall
             # Получаем Recall для каждого уровня conf_thresh (строка), для каждого уровня IOU (столбец)
             recall = tpc / (n_gt + 1e-16)  # recall curve
-            # Интерполируем точку для Recall по точке pr_score в conf. И так интерполируем только для столбца, где IOUthresh=0.5
+            # Интерполируем точку для Precision по точке pr_score в conf. И так интерполируем только для столбца, где IOUthresh=0.5
             r[ci] = np.interp(-pr_score, -conf[i], recall[:, 0])  # r at pr_score, negative x, xp because xp decreases
 
             # Precision
